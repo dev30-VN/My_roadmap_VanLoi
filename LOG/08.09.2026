@@ -3,4 +3,32 @@ mình học về vòng lặp for.
 toán tử ===.
 tích luỹ tổng bằng vòng lặp (sum=sum+i).
 nắm rõ hơn về cách mà vòng lặp hoạt động. chia for ra 3 phần để có thể đọc nó. phần 1-khởi tạo let i = 1. phần 2-điều kiện i<=10. phần 3-tăng biến i i++.
-nice try.
+Học sơ về mảng ở bài tập 5. Nó thực sự hay và nó giúp mình hiểu ra vấn đề i vẫn có giá trị là 1. nhưng là number[i] nên thay vì là giá trị thì nó trỏ đến vị trí trong mảng.
+let number = [3, 8, 2, 10, 5];
+let max = number[0];
+for (let i = 1; i < number.length; i++) {
+  if (number[i] > max) {
+    max = number[i];
+  }
+}
+console.log(max);
+và một bài nâng cao:
+let number = [7, 2, 15, 4, 9, 12];
+let max = number[0];
+let sum = 0;
+for (let i = 1; i < number.length; i++) {
+  if (number[i] > max) {
+    max = number[i];
+  }
+  if (number[i] % 2 === 0) {
+    sum += number[i];
+  }
+}
+console.log(
+  "The maximum number is: " +
+    max +
+    " and the sum of even maximum numbers is: " +
+    sum
+);
+Mình đã sai ở phần tính sum khi mình dùng max để thực hiện tính sum. đúng là phải dùng số trong mảng để tính. Vì khi dùng max để tính thì khi max 15. nó sẻ lun false và sum luôn bằng 0.
+Nice try !!!
