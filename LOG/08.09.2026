@@ -1,0 +1,6 @@
+Day2
+mình học về vòng lặp for.
+toán tử ===.
+tích luỹ tổng bằng vòng lặp (sum=sum+i).
+nắm rõ hơn về cách mà vòng lặp hoạt động. chia for ra 3 phần để có thể đọc nó. phần 1-khởi tạo let i = 1. phần 2-điều kiện i<=10. phần 3-tăng biến i i++.
+nice try.
